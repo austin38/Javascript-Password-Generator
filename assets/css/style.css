@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    background-color: whitesmoke;
+}
+
+.wrapper {
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    color: hsl(206, 17%, 28%);
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 8px 0px;
+    color: hsl(206, 17%, 28%);
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.card-header::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    background: #e7e9ec;
+    height: 2px;
+}
+
+.card-body {
+    min-height: 100px;
+}
+
+.card-footer {
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+.card-footer::before {
+    content: " ";
+    display: block;
+    background: #e7e9ec;
+    width: 102%;
+    height: 2px;
+}
+
+.card-footer::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.btn {
+    border: none;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    background-color: darkred;
+    line-height: 20px;
+    margin: 16px 16px 16px 20px;
+    padding: 15px 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button[disabled] {
+    cursor: default;
+    background: #c0c7cf;
+  }
+  
+.float-right {
+    float: right;
+  }
+  
+#password {
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 85px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed lightgrey;
+    border-radius: 6px;
+    resize: none;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 690px) {
+    .btn {
+      font-size: 18px;
+      margin: 16px 0px 0px 0px;
+    }
+  
+    #password {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .btn {
+      font-size: 0.8rem;
+    }
+  }
